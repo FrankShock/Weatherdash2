@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <h>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <title>Weather Dashboard</title>
+<body>
+    <header>
+        <h1 class="text-center bg-header">Weather Dashboard</h1>
+      </header>
+<main class="container">
+    <div  class="d-flex row container col-12 m-2 mt-5 fill">
+        <div class="col-3 container">
+            <h2 class="m-2">Search For a City:</h2>
+            <div class="input-group mb-3">
+                <input
+            id="cityInput" type="text"
+            name="citySearch"
+            class="form-control m-2"
+            placeholder="Enter City Here"
+          />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="search-button">Search</button>
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+            <form id="history"  class="m-2 col-12 border-top border-green border-5">
+            </form>
+        </div>
+        <div class= "col-12 col-lg-9">
+            <div class="col-lg-11 card m-3 d-none" id="weather-today">
+                <div class="card-body">
+                    <h3 id="name-city" class="name-city align-right"></h3>
+                    <img id="current-pic" alt="WEATHER GRAPHIC">
+        <p id="temper">Temp:</p>
+        <p id="humidi">Humid:</p>
+        <p id="wspeed">Wind SP:</p>
+        <p id="UVdex">UV:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div  class="text-center col-sm-12 bg-red">
+    <h4>This Weeks Forecast</h4>
+</div>
+<section class="container row my-5">
+    <div class="row text-light">
+    <div id="fivedays">
+        <div class="col-lg-1">
+           <div class="col-sm-2 bg-primary ml-2 p-2 ">
+             <p id="Wdate0"></p>
+             <p id="Wimg0"></p>
+             <p>Temp:<span id="Wtemp0">
+             </span></p>
+             <p>Humid:<span id="Whumd0">
+             </span></p>
+         </div>
+         <div class="col-sm-2 bg-primary ml-2 p-2">
+            <p id="Wdate1"></p>
+            <p id="Wimg1"></p>
+            <p>Temp:<span id="Wtemp1">
+            </span></p>
+            <p>Humid:<span id="Whumd1">
+            </span></p>
+       </div>
+       <div class="col-sm-2 bg-primary ml-2 p-2 ">
+        <p id="Wdate2"></p>
+        <p id="Wimg2"></p>
+        <p>Temp:<span id="Wtemp2">
+        </span></p>
+        <p>Humid:<span id="Whumd2">
+        </span></p>
+        </div>
+        <div class="col-sm-2 bg-primary ml-2 p-2 ">
+            <p id="Wdate3"></p>
+            <p id="Wimg3"></p>
+            <p>Temp:<span id="Wtemp3">
+            </span></p>
+            <p>Humid:<span id="Whumd3">
+            </span></p>
+            </div>
+            <div class="col-sm-2 bg-primary ml-2 p-2">
+                <p id="Wdate4"></p>
+                <p id="Wimg4"></p>
+                <p>Temp:<span id="Wtemp4">
+                </span></p>
+                <p>Humid:<span id="Whumd4">
+                </span></p>
+                </div>
+         </div>
+    </div>
+    </div>
+</section>
+
+<script src="/assets/Js/index.js"></script>
+</body>
+</html>
